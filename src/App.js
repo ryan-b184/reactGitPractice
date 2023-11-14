@@ -1,6 +1,13 @@
-import { NavBar } from "./NavBar";
-import Home from "./Pages/Home";
-import About from "./Pages/About";
+
+import './app.css'
+import './index.css'
+import { Head } from "./Components/header/Head";
+import {NavBar} from "./Components/navbar/NavBar";
+import About from "./Components/about/About";
+import {Experience} from "./Components/experience/Experience.jsx";
+import Contact from "./Components/contact/Contact";
+
+
 
 function App() {
 
@@ -8,23 +15,27 @@ function App() {
 
   {/* creating a switch to display differnet pages based on
         what nav bar option was chosen */}
-  switch (window.location.pathname) {
-    case "/":
-      Comp = Home
-      break
-    case "/about":
-      Comp = About
-      break
-  }
-
+  // switch (window.location.pathname) {
+  //   case "/reactGitPractice/":
+  //     Comp = Home
+  //     break
+  //   case "/reactGitPractice/about":
+  //     Comp = About
+  //     break
+  // }
+        //no longer using this as all information will be on the same page for now
 
   return (
-    <div className="bg-primary-subtle">
-      <div className="w-75 m-auto bg-body">
+    <div>
+      <div className="">
 
-        
+        {/* import all components that will show up on the page */}
         <NavBar></NavBar>
-        <Comp></Comp>
+        <Head></Head>
+        <About></About>
+        <Experience></Experience>
+        <Contact></Contact>
+        {/* <Comp></Comp> */}
 
       </div>
     </div>
