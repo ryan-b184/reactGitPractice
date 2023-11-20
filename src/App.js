@@ -30,8 +30,9 @@ function App() {
       <div className="">
 
         {/* import all components that will show up on the page */}
-        <NavBar></NavBar>
         <Head></Head>
+        <NavBar></NavBar>
+        
         <About></About>
         <Experience></Experience>
         <Contact></Contact>
