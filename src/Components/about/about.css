@@ -1,0 +1,44 @@
+.about__container {
+    display:grid;
+    grid-template-columns: 35% 65%;
+    gap:10%;
+}
+
+.about__me {
+    width: 100%;
+    aspect-ratio: 800/533; /*image is 800px x 533px*/
+    border-radius: 2rem;
+    background: linear-gradient(45deg, transparent, var(--color-primary), transparent);
+    display:grid;
+    place-items: center;
+
+}
+
+/*transition and following :hover tag allows for image animation */
+.about__me-image {
+    border-radius: 2rem;
+    overflow:hidden;
+    transform: rotate(10deg);
+    transition: var(--transition);
+}
+
+.about__me-image:hover {
+    transform: rotate(0);
+}
+
+/*styling the container that holds multiple cards*/
+.about__cards {
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap:1.5rem;
+}
+
+/*styling each individual card*/
+.about__card {
+    background: var(--color-bg-variant);
+    border:1px solid transparent;
+    border-radius: 2rem;
+    padding:2rem;
+    text-align: center;
+
+}

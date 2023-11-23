@@ -1,4 +1,4 @@
-import { NavItem } from "./NavItem"
+
 import './navbar.css'
 import { FaHome } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
