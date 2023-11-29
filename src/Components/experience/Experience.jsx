@@ -5,7 +5,7 @@ import {ExperienceItem}from "./ExperienceItem"
 export const Experience = () => {
   return (
     <section id="experience">
-      <h5>Work Experience and Projects</h5>
+      <h5>Experience and Knowledge</h5>
       <h2>My Experience</h2>
 
       <div className='container experience__container'>

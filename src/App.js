@@ -6,6 +6,7 @@ import {NavBar} from "./Components/navbar/NavBar";
 import About from "./Components/about/About";
 import {Experience} from "./Components/experience/Experience.jsx";
 import Contact from "./Components/contact/Contact";
+import { Portfolio } from './Components/portfolio/Portfolio.jsx';
 
 
 
@@ -35,6 +36,7 @@ function App() {
         
         <About></About>
         <Experience></Experience>
+        <Portfolio/>
         <Contact></Contact>
         {/* <Comp></Comp> */}
 
