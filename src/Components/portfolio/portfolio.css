@@ -6,7 +6,7 @@
 
 .portfolio__cards {
     display: grid;
-    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    grid-template-columns: 0.5fr 0.5fr;
     gap: 1rem;
 }
 
@@ -37,17 +37,33 @@
     border: 1px solid transparent;
     border-radius: 3rem;
     background-color: var(--color-bg-variant);
+    display: grid;
+    grid-template-columns: 60% 40%;
+    gap: 1.5rem;
 }
-.portfolio__card > h2 {
+
+.portfolio__skills > ul > li {
+    text-align: left;
+    margin-left: 2rem;
+}
+
+/* skills category */
+.portfolio__skills > h2 {
+    text-align: center;
+    color: var(--color-primary);
+}
+
+/* project description category */
+.portfolio__card >div> h2 {
     text-align: center;
     margin-bottom: 1rem;
     color: var(--color-primary)
 }
-.portfolio__card > img {
+.portfolio__card >div> img {
     border-radius: 2rem;
     margin: auto;
 }
-.portfolio__card > small {
+.portfolio__card >div> small {
     text-align: left;
     color: var(--color-white);
     margin-left: 0.6rem;
