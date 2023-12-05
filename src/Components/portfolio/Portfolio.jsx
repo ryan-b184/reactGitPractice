@@ -26,6 +26,17 @@ export const Portfolio = () => {
       desc: "Followed a tutorial in order to learn the basics of React. I have gotten comfortable with the work flow of frontend development and plan to update this site as my portfolio expands."
     }),
     PortfolioCard({
+      title:"Locating Geological Deposits with ML", 
+      titleLink: "",
+      imgSrc:"https://www.codingdojo.com/blog/wp-content/uploads/react.jpg", 
+      imgAlt:"", 
+      skills: ["Python", "Research", "MatPlotLib", "SKLearn", "Tensorflow", "Research", "GIS", "CNN", "Random Forest", "Data Extraction", "Clustering", "Semantic Segmentation"],
+      desc: "While working for DICE, I was tasked with locating gravel deposits using GIS data (DEM, DTM, DSM) in QGIS to extract useful information to train ML models. " + 
+      "These ML models would then be tested against a real test dataset in order to predict on the location of gravel deposits."+
+      "While working in this role, I have learned a great deal about geology and working both solo and in pairs. I was able to successfully deliver " +
+      "quality code and documentation for every team and client meeting while clearly and concisely presenting about progress."
+    }),
+    PortfolioCard({
       title:"More To Come...", 
       titleLink: "",
       imgSrc:"https://www.codingdojo.com/blog/wp-content/uploads/react.jpg", 
@@ -77,8 +88,12 @@ export const Portfolio = () => {
                 {getDisplayCards(portCards)}
                 
             </div>
-            {currInd}
+            
             <div className='btn arrow__btn arrow__btn-right' onClick={ increaseCurrInd}>&gt;</div>
+            {/* used to display the current page number
+              a visual to represent pages will be added at a later date
+            */}
+            {currInd / CARD_COUNT} 
         </div>
 
     </section>
