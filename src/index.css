@@ -28,6 +28,9 @@
   --container-width-lg: 75%;
   --container-width-md: 86%;
   --container-width-sm: 90%;
+
+  /*card count per page on carousel*/
+  --carousel-card-count:2;
 }
 
 

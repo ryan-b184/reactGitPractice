@@ -46,8 +46,14 @@ export const Portfolio = () => {
     })
   ]
 
+
   //the amount of cards that will be displayed int he carousel
+  //getter for css style
+  // const CARD_COUNT = parseInt(window.getComputedStyle(document.body).getPropertyValue('--carousel-card-count'));
   const CARD_COUNT = 2;
+  //setter for css style
+  // document.body.style.setProperty('--carousel-card-count', "1");
+
   //this represents the current index of the left most card
   const [currInd, setCurrInd] = useState(0);
   
@@ -74,6 +80,26 @@ export const Portfolio = () => {
     return retList
   }
 
+
+  //a function to display a dot for every page in the carousel with one selected
+  function getPageDots() {
+    let totalPages = Math.ceil(portCards.length / CARD_COUNT);
+    let currPage = currInd / CARD_COUNT;
+    let retList = []
+    for (let i=0; i<totalPages; i++){
+      if (currPage === i){
+        //on selected page
+        retList.push(<div className='selected__page'>.</div>)
+      }
+      else {
+        retList.push(<div className='page__dot'>.</div>)
+      }
+    }
+
+    return retList
+  }
+
+  
   
 
 
@@ -82,18 +108,25 @@ export const Portfolio = () => {
         <h5>My Project Experience</h5>
         <h2>Portfolio</h2>
         <div className='carousel'>
-            <div className='btn arrow__btn arrow__btn-left' onClick={decreaseCurrInd}>&lt;</div>
-            
+            {CARD_COUNT}
             <div className='portfolio__cards'>
                 {getDisplayCards(portCards)}
                 
             </div>
             
-            <div className='btn arrow__btn arrow__btn-right' onClick={ increaseCurrInd}>&gt;</div>
+            
             {/* used to display the current page number
               a visual to represent pages will be added at a later date
             */}
-            {currInd / CARD_COUNT} 
+            
+        </div>
+        <div className='page__nav'>
+          <div className='btn arrow__btn arrow__btn-left' onClick={decreaseCurrInd}>&lt;</div>
+          <div className='page__counter'>
+            {/* this div displayes the amount of pages available in the carousel */}
+            {getPageDots()}
+          </div>
+          <div className='btn arrow__btn arrow__btn-right' onClick={ increaseCurrInd}>&gt;</div>
         </div>
 
     </section>

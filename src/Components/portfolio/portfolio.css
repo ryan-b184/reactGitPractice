@@ -16,20 +16,7 @@
     margin: auto;
     position: relative;
 }
-.arrow__btn {
-    height: max-content;
-    border-radius: 3rem;
-    padding: 0.5rem 1.1rem;
-    margin: 0;
-    position:absolute;
-    top: 50%;
-}
-.arrow__btn-left {
-    left:-5%;    
-}
-.arrow__btn-right {
-    right: -5%;
-}
+
 
 /* individual card styles */
 .portfolio__card {
@@ -68,3 +55,52 @@
     color: var(--color-white);
     margin-left: 0.6rem;
 }
+
+/* styles for the pages displayed at the bottom of the carousel--------------- */
+.page__counter {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.selected__page {
+    /* styles for selected dot */
+    font-size: 3rem;
+    color: var(--color-primary);
+}
+.page__dot {
+    /* styles for each dot */
+    font-size: 3rem;
+    color: var(--color-primary-variant);
+    
+}
+
+/* styles for page navigation ----------------------------- */
+.page__nav {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    justify-content: center;
+}
+.arrow__btn {
+    height: max-content;
+    border-radius: 3rem;
+    margin-top: 2.4rem;
+    padding: 0 0.6rem;
+    
+}
+
+
+/* ================ MEDIA QUERIES ===============*/
+
+@media screen and (max-width: 1024px) {
+    .portfolio__cards{
+        grid-template-columns: 1fr;
+        /* gap: 0; */
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    
+  }
