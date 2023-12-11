@@ -1,22 +1,22 @@
-## Ryan Byspalko's Fronend React Portfolio
+# Ryan Byspalko's Fronend React Portfolio
 # Abstract
 This is a simple frontend only React app used as a portfolio for myself.
 
-#Description
+# Description
 This React app is used to showcase the basic skills I have learned in reacts frontend and to show other projects and skills I have learned along the way.
 
-#Viewing
+# Viewing
 In order to view the deployed page, please see the github pages here: 
 https://templink
 
-#Main Skills Applied/Learned
+# Main Skills Applied/Learned
 1. HTML
 2. CSS
 3. Components
 4. Props
 5. File Structure
 
-#Development setup
+# Development setup
 If you would like to edit the code, follow these steps.
 1. Install VSCode and Github
 2. Clone Repository
@@ -24,7 +24,7 @@ If you would like to edit the code, follow these steps.
 4. Through the terminal in VSCode or CMD prompt navigate to the react project folder
 5. type "npm start" to begin hosting the website on https://localhost:3000
 
-#Other Useful Scripts
+# Other Useful Scripts
 In the project directory, you can run:
 
 ### `npm start`
