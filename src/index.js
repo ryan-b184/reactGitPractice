@@ -17,7 +17,7 @@ root.render(
   <React.StrictMode>
 
     <body>
-      <h1 className='bg-black'>index</h1>
+      {/* <h1 className='bg-black'>index</h1> */}
       <App></App>
     </body>
     

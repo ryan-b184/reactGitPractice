@@ -108,7 +108,7 @@ export const Portfolio = () => {
         <h5>My Project Experience</h5>
         <h2>Portfolio</h2>
         <div className='carousel'>
-            {CARD_COUNT}
+            
             <div className='portfolio__cards'>
                 {getDisplayCards(portCards)}
                 
