@@ -18,11 +18,12 @@ https://templink
 
 # Development setup
 If you would like to edit the code, follow these steps.
-1. Install VSCode and Github
+1. Install VSCode, GitHub, and NodeJS
 2. Clone Repository
 3. Open folder within VSCode
 4. Through the terminal in VSCode or CMD prompt navigate to the react project folder
-5. type "npm start" to begin hosting the website on https://localhost:3000
+5. type "npm install" to install all dependancies
+6. type "npm start" to begin hosting the website on https://localhost:3000
 
 # Other Useful Scripts
 In the project directory, you can run:
