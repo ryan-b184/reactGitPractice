@@ -43,16 +43,16 @@ export default function About(){
                     </div>
 
                     {/* div for paragraphs and buttons */}
-                    <p>
-                        
-                        Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
-                        when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-                        It has survived not only five centuries, but also the leap into electronic typesetting,
-                        remaining essentially unchanged. It was popularised in the 1960s with the release of 
-                        Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing 
-                        software like Aldus PageMaker including versions of Lorem Ipsum
-                    </p>
+                    <div>
+                        <p>
+                            My name is Ryan Byspalko, I earned my diploma at Saskatchewan Polytechnic after a two year course in the
+                            <a href="" target='_blank'> Computer Systems and Technologies</a> course (CST).
+                            Throughout my education, I have aquired many useful skills that Have been very useful for my career. 
+                            During my projects class, I learned the skills and process to effectively work in a team using the Agile approach.
+                            My team utalized pair programing to speed up the documentation process and to gurantee a polished section
+                            of code that is easly readable.
+                        </p>
+                    </div>
                     <a href="#contact" className='btn btn-primary'>Contact Me</a>
                 </div>
 
