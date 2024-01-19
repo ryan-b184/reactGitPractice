@@ -1,4 +1,4 @@
-# Ryan Byspalko's Fronend React Portfolio
+# Ryan Byspalko's Frontend React Portfolio
 # Abstract
 This is a simple frontend only React app used as a portfolio for myself.
 
