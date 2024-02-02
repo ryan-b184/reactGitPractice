@@ -1,5 +1,5 @@
 header {
-    height: 50vh;
+    height: 58vh;
     padding-top: 7rem;
     overflow: hidden;
 }
@@ -18,16 +18,17 @@ header {
     border-top-right-radius: 3rem;
     border-bottom: 2px solid white;
     padding-bottom: 3rem;
+    
 }
 
 
 /* styling buttons */
 .buttons {
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
     display: flex;
     gap: 1rem;
     justify-content: center;
-    /* padding-bottom: 3rem; */
+    margin-bottom: 3rem;
 }
 
 .header__socials {
@@ -39,11 +40,6 @@ header {
 }
 
 .flexCont {
-    /* position:relative;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center; */
     display: flex;
     flex-direction: row;
     align-items: center;

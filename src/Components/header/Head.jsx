@@ -10,7 +10,7 @@ export const Head = () => {
         <h5>Hello I'm</h5>
         <h1>Ryan Byspalko</h1>
         <h5 className='text-light'>Developer</h5>
- 
+  
         <div className='flexCont'>
           <Socials></Socials>
           <div className='buttons'>
