@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import './portfolio.css'
 import { PortfolioCard } from './PortfolioCard'
 import { FaChevronRight } from "react-icons/fa";
@@ -46,7 +46,7 @@ export const Portfolio = () => {
     })
   ]
 
-
+  
   //the amount of cards that will be displayed int he carousel
   //getter for css style
   // const CARD_COUNT = parseInt(window.getComputedStyle(document.body).getPropertyValue('--carousel-card-count'));

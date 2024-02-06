@@ -7,6 +7,7 @@ import About from "./Components/about/About";
 import {Experience} from "./Components/experience/Experience.jsx";
 import Contact from "./Components/contact/Contact";
 import { Portfolio } from './Components/portfolio/Portfolio.jsx';
+import { APIPort } from './Components/portfolio/APIPort.jsx';
 import {FooterComp} from './Components/footer/FooterComp.jsx'
 
 
@@ -34,6 +35,7 @@ function App() {
         <Head></Head>
         <NavBar></NavBar>
         
+        <APIPort/>
         <About></About>
         <Experience></Experience>
         <Portfolio/>

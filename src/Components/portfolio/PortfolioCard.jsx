@@ -1,7 +1,7 @@
 import React from 'react'
 import './portfolio.css'
 
-
+ 
 
 export function PortfolioCard({title, titleLink,imgSrc, imgAlt, skills, desc}) {
   
